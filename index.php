@@ -22,7 +22,7 @@
 <section class="secTwo">
 
 
-    <h1>Pita Pushers Online Ordering</h1>
+    <h2>Pita Pushers Online Ordering</h2>
         <p>Order online and pick up at the truck!</p>
         
         <form action="">
@@ -30,6 +30,8 @@
             <input type="radio" name="item" value="sandwich" > Falafel<br>
             <input type="radio" name="item" value="" > <br>
             <input type="radio" name="item" value="" > <br>
+            <button class="submit" type="submit" name="submit" value="add">Add to cart</button>
+        </form>
         </form>
         
         <br>
@@ -43,12 +45,7 @@
             <br>
 
         <td>
-                <div id="button" data-role="button"></div>
-<script>
-   var buttonElement = document.getElementById("button"),
-       button = tau.widget.Button(buttonElement);
-       button.value("text");
-</script>
+
          </td>
       </tr>
         
@@ -67,16 +64,16 @@
             
             <br>
             
-            <button class="submit" type="submit" name="submit" value="add">Add to Order</button>
+            <button class="submit" type="submit" name="submit" value="add">Add to cart</button>
         </form>
 
 </section>
         
         
 <section class="secThree">
-    <h1>
+    <p><b>
 	Order Detail
-	</h1>
+    </b></p>
 </section>
 
 
