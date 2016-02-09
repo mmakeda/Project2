@@ -20,20 +20,29 @@
 
 <!---------------------------Main------------------------->
 <section class="secTwo">
+<?php 
+
+include('item.php');
+
+
+?>
 
 
     <h2>Pita Pushers Online Ordering</h2>
-        <p>Order online and pick up at the truck!</p>
-        
+        <h4>Order online and pick up at the truck!</h4>
+        <?php
+               
+        ?>
         <form action="">
-            <p>What are you going to order?</p>
+            <h3>Place your Order</h3>
             <input type="radio" name="item" value="sandwich" > Falafel<br>
-            <input type="radio" name="item" value="" > <br>
-            <input type="radio" name="item" value="" > <br>
+            <input type="radio" name="item" value="pita" > Pita<br>
+            <input type="radio" name="item" value="fries" > Fries <br><br>
             <button class="submit" type="submit" name="submit" value="add">Add to cart</button>
-        </form>
+         
         </form>
         
+     <?php echo 'You chose:' . $_POST['item'];?>
         <br>
         <br>
         <br>
@@ -45,18 +54,18 @@
             <br>
 
         <td>
-
+   
          </td>
       </tr>
         
 <hr>
         
         <form action="">
-            <p>Do you want fries with that?</p>
+            <h3>Side Order</h3>
             
             <input type="checkbox" name="side" value="fries" > Harra Frites<br>
-            <input type="checkbox" name="side" value="" > <br>
-            <input type="checkbox" name="side" value="" > <br>
+            <input type="checkbox" name="side" value="hummus" > Hummus<br>
+            <input type="checkbox" name="side" value="beets" > Shamandar Bi Tahini<br>
                
             <input type="checkbox" name="side" value="" > <br>
             <input type="checkbox" name="side" value="" > <br>
@@ -66,8 +75,12 @@
             
             <button class="submit" type="submit" name="submit" value="add">Add to cart</button>
         </form>
+        
+        
 
 </section>
+    
+    
         
         
 <section class="secThree">
