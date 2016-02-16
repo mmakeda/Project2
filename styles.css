@@ -1,0 +1,110 @@
+/*styles.css*/
+body { 
+  font-family: 'Verdana', sans-serif;
+}
+
+#wrapper {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+
+header {
+	height: 100px;
+	padding: 0 15px;
+}
+
+.secTwo {
+	width: 587px;
+	float: left;
+	padding: 6px 17px;
+}
+
+.secThree {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+    height: 460px;
+}
+
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/*+++++++++++++++++++++++++++Media Queries++++++++++++++++++++++++*/
+
+/* for 860px or less */
+@media screen and (max-width: 860px) {
+	
+	#wrapper {
+		width: 94%;
+	}
+	.secTwo {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	.secThree {
+		width: 41%;
+		padding: 2% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+
+	header, footer {
+		padding: 2% 6%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	.secTwo {
+		width: auto;
+		float: none;
+	}
+	
+	.secThree {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+    
+	h2 {
+		font-size: 2em;
+	}
+
+}
+
+
+.secTwo {
+	background: #f6e8d6;
+}
+
+}
+header, .secTwo, .secThree, {
+	margin-bottom: 5px;
+}
+
+#wrapper, header {
+	border: solid 3px #ccc;
+}
+
+.secThree, .secTwo, footer {
+ border: solid 1px #ccc;   
+    
+}
+
+
+	
